@@ -10,8 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.demouser.jterm2017helloworld.MainActivity">
 
-    <TextView
+    <Button
+        android:text="Look Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/lookupButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Country Code"
+        android:ems="10"
+        android:layout_above="@+id/countryCode"
+        android:layout_alignLeft="@+id/countryCode"
+        android:layout_alignStart="@+id/countryCode"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryCode"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/lookupButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
